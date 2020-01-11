@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.example {
+    display: flex;
+    /* flex-start para notar como el posicionamiento absoluto y relativo no respetan el flujo normal de la página */
+    justify-content: space-around;
+    /**justify-content: flex-start;*/
+    width: 800px;
+    margin: 50px 0;
+    background-color: #D6E9FE;
+}
+
+.item img {
+    display: block;
+}
+
+.item-relative {
+    /* Indica que el elemento está posicionado en relación al punto en que originalmente debe aprecer */
+    position: relative;
+    /* top, bottom, right y left indican cuanto se alejará el contenedor desde su ubicación original */
+    top: 30px;
+    left: 30px;
+}
+
+.item-absolute {
+    /* Indica que el elemento está posicionado en relación a la ventana del navegador */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute {
+    /* Deja al contenedor padre como relativo para evitar que el contenedor hijo tome su posición en relación al navegador.
+  Por lo mismo, tampoco tiene configuración de valores en los que se moverá */
+    position: relative;
+}
