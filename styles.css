@@ -42,6 +42,13 @@ body {
     left: 10px;
 }
 
+.item-fixed {
+    /* Indica que el elemento está posicionado en relación a la ventana del navegador, sin que se vea afectado por el scroll */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 .absolute {
     /* Deja al contenedor padre como relativo para evitar que el contenedor hijo tome su posición en relación al navegador.
   Por lo mismo, tampoco tiene configuración de valores en los que se moverá */
